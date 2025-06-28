@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Bestie!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: url('your-hero-image.jpg') center/cover no-repeat;
+      background-size: cover;
+      color: white;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1, header p {
+      animation: fadeInUp 2s ease-out;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .memory {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .memory img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .caption {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-style: italic;
+      color: #666;
+    }
+
+    .video-section video {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .message-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #444;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .message-box h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #d63384;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #999;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" loop hidden>
+    <source src="music/memories.mp3" type="audio/mp3">
+
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('bg-music');
+    audio.volume = 0.5;
+    audio.play().catch(() => {
+      // Some browsers block autoplay — you can optionally show a play button here
+      console.log("Autoplay blocked. User interaction required.");
+    });
+  });
+</script>
+
+  <header>
+    <h1>Happy Birthday, Tithi 🎉</h1>
+    <p>To my dearest best friend…</p>
+  </header>
+
+  <section>
+    <div class="memory">
+      <img src="images/Screenshot 2025-06-27 142822.png" alt="Memory 1">
+      <div class="caption">choti with low memory capacity</div>
+    </div>
+    <div class="memory">
+      <img src="images/Screenshot 2025-06-28 112338.png" alt="Memory 2">
+      <div class="caption">Every second spend you I always remember</div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+
+      <source src="videos/VID_20250627_224922_296.mp4" type="video/mp4">
+      
+    </video>
+    <div class="caption">heroin even with low camera and lighting quality</div>
+
+   <video autoplay muted loop playsinline>
+      <source src="videos/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="caption">my behen </div>
+  </section>
+
+  <section id="final-message">
+    <div class="message-box">
+      <h2>💖 Just One Last Thing...</h2>
+      <p>
+        Happy Birthday Tithi, may God help you in your future success. On this day I want to thank you for every help you provided me — whether it was helping me find a good momos stall, or sending my message to Aradhay, even risking your friendship — and you still helped.
+        <br><br>
+        You help me even now, when we have no chance to come together, by telling me how she is and what's going on with her, never questioning my intentions.
+        <br><br>
+        Even though you have a little memory 😄, you are one of the best people I’ve ever met — my behen.
+        <br><br>
+        In the end, once again… Happy Birthday. ❤️
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Made with 💖 just for you
+  </footer>
+</body>
+</html>
+
